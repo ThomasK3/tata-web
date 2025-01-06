@@ -3,7 +3,7 @@
 
 REFERENCE
 TODO:
-[ ] Filtrace projektů pomocí JavaScriptu
+[X] Filtrace projektů pomocí JavaScriptu
 [ ] Lazy loading pro obrázky
 Lightbox pro zobrazení fotek ve větším formátu
 Možnost sdílení projektů na sociálních sítích
