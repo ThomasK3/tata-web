@@ -1,1 +1,210 @@
-<!DOCTYPE html><head></head><body><h1>REFERENCE</h1></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prohlédněte si naše realizované projekty a reference od spokojených zákazníků. Kvalitní stavební práce a rekonstrukce.">
+    <title>Reference a realizované projekty | Tomáš Kaňuch</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reference.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../index.html">Tomáš Kaňuch - Stavební práce</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="sluzby.html">Služby</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a href="o-mne.html">O mně</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Úvodní sekce -->
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Realizované projekty</h1>
+                <p>Prohlédněte si výběr z našich nejzajímavějších realizací. Každý projekt je jedinečný a přistupujeme k němu s maximální péčí a profesionalitou.</p>
+            </div>
+        </section>
+
+        <!-- Hlavní sekce s galerií -->
+        <section class="projects-gallery">
+            <div class="container">
+                <!-- Filtry -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Všechny projekty</button>
+                    <button class="filter-btn" data-filter="rekonstrukce">Rekonstrukce</button>
+                    <button class="filter-btn" data-filter="novostavby">Novostavby</button>
+                    <button class="filter-btn" data-filter="koupelny">Koupelny</button>
+                    <button class="filter-btn" data-filter="zatepleni">Zateplení</button>
+                </div>
+
+                <!-- Grid s projekty -->
+                <div class="gallery-grid">
+                    <!-- Projekt 1 -->
+                    <article class="gallery-item" data-category="rekonstrukce">
+                        <div class="gallery-image">
+                            <img src="../img/projects/Frame 68.png" alt="Rekonstrukce bytu Praha" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Rekonstrukce bytu Praha</h3>
+                                <p class="project-brief">Kompletní rekonstrukce 3+kk včetně koupelny a kuchyně</p>
+                                <button class="view-details" data-project="1">Zobrazit detail</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 2 -->
+                    <article class="gallery-item" data-category="novostavby">
+                        <div class="gallery-image">
+                            <img src="../img/projects/Frame 69.png" alt="Novostavba RD Beroun" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Novostavba RD Beroun</h3>
+                                <p class="project-brief">Realizace hrubé stavby rodinného domu</p>
+                                <button class="view-details" data-project="2">Zobrazit detail</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 3 -->
+                    <article class="gallery-item" data-category="koupelny">
+                        <div class="gallery-image">
+                            <img src="../img/projects/Frame 70.png" alt="Moderní koupelna" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Moderní koupelna Praha</h3>
+                                <p class="project-brief">Kompletní rekonstrukce koupelny</p>
+                                <button class="view-details" data-project="3">Zobrazit detail</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Další projekty... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Modální okno pro detail projektu -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Název projektu</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-gallery">
+                    <div class="before-after-slider">
+                        <img src="../img/projects/before1.jpg" alt="Před rekonstrukcí" class="before-image">
+                        <img src="../img/projects/after1.jpg" alt="Po rekonstrukci" class="after-image">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h4>Rozsah prací</h4>
+                        <ul>
+                            <li>Kompletní rekonstrukce bytového jádra</li>
+                            <li>Nové rozvody elektřiny</li>
+                            <li>Výměna oken</li>
+                            <li>Nové podlahy</li>
+                            <li>Rekonstrukce koupelny a WC</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Doba realizace</h4>
+                        <p>6 týdnů</p>
+                    </div>
+                    <div class="client-testimonial">
+                        <blockquote>
+                            "Výborná komunikace a profesionální přístup. S výsledkem jsme maximálně spokojeni."
+                        </blockquote>
+                        <cite>- Jan Novák, Praha</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>Co o nás říkají zákazníci</h2>
+                <div class="testimonials-grid">
+                    <!-- Referenční karta 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p class="testimonial-text">"S rekonstrukcí koupelny jsme maximálně spokojeni. Pan Kaňuch odvedl perfektní práci, dodržel termíny a cenu. Oceňuji především jeho profesionální přístup a čistotu při práci."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="client-info">
+                                <p class="client-name">Jana Veselá</p>
+                                <p class="project-type">Rekonstrukce koupelny, Praha</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Referenční karta 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p class="testimonial-text">"Kompletní rekonstrukce bytu proběhla podle plánu. Výsledek předčil naše očekávání. Určitě doporučuji všem, kdo hledají kvalitního a spolehlivého řemeslníka."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="client-info">
+                                <p class="client-name">Petr Novotný</p>
+                                <p class="project-type">Rekonstrukce bytu 3+1, Beroun</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Referenční karta 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">❝</div>
+                            <p class="testimonial-text">"Pan Kaňuch realizoval stavbu našeho rodinného domu. Jeho práce byla precizní, vše bylo včas a kvalitně provedené. Komunikace byla vždy příjemná a konstruktivní."</p>
+                        </div>
+                        <div class="testimonial-footer">
+                            <div class="client-info">
+                                <p class="client-name">Martin Svoboda</p>
+                                <p class="project-type">Novostavba RD, Praha-západ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kontakt</h3>
+                <p>Tomáš Kaňuch</p>
+                <p>Tel: +420 777 888 999</p>
+                <p>Email: info@kanuch-stavby.cz</p>
+                <p>IČO: 12345678</p>
+            </div>
+            <div class="footer-links">
+                <h3>Rychlé odkazy</h3>
+                <ul>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="o-mne.html">O mně</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Provozní doba</h3>
+                <p>Po-Pá: 7:00 - 17:00</p>
+                <p>So-Ne: dle dohody</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tomáš Kaňuch - Stavební práce. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <script src="../js/reference.js"></script>
+</body>
+</html>
