@@ -8,84 +8,6 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../brickwall.png">
-    <style>
-        .services-content {
-            padding: var(--spacing);
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .price-category {
-            margin-bottom: 3rem;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-        }
-
-        .category-header {
-            background: var(--primary-color);
-            color: white;
-            padding: 1.5rem 2rem;
-        }
-
-        .category-header h2 {
-            color: white;
-            margin: 0;
-        }
-
-        .price-list {
-            padding: 2rem;
-        }
-
-        .price-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        .price-item:last-child {
-            border-bottom: none;
-        }
-
-        .service-name {
-            flex: 1;
-        }
-
-        .service-name h3 {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-
-        .service-name p {
-            margin: 0.5rem 0 0;
-            color: var(--dark-gray);
-            font-size: 0.9rem;
-        }
-
-        .service-price {
-            font-weight: bold;
-            color: var(--primary-color);
-            font-size: 1.2rem;
-            padding-left: 2rem;
-            white-space: nowrap;
-        }
-
-        .price-note {
-            font-size: 0.9rem;
-            color: var(--dark-gray);
-            font-style: italic;
-            margin-top: 0.5rem;
-        }
-
-        .service-cta {
-            text-align: center;
-            padding: 3rem var(--spacing);
-            background-color: var(--light-gray);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -110,6 +32,7 @@
             </div>
         </section>
 
+        <div id="rekonstrukce" style="position: relative; top: -100px; visibility: hidden;"></div>
         <div class="services-content">
             <div class="price-category">
                 <div class="category-header">
@@ -140,6 +63,7 @@
                 </div>
             </div>
 
+            <div id="zednicke-prace" style="position: relative; top: -100px; visibility: hidden;"></div>
             <div class="price-category">
                 <div class="category-header">
                     <h2>Zednické práce</h2>
@@ -169,6 +93,7 @@
                 </div>
             </div>
 
+            <div id="obkladacske-prace" style="position: relative; top: -100px; visibility: hidden;"></div>
             <div class="price-category">
                 <div class="category-header">
                     <h2>Obkladačské práce</h2>

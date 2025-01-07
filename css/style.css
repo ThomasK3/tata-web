@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Pro plynulé scrollování na kotvu */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -167,8 +171,15 @@ a {
     transition: transform 0.3s;
 }
 
+.service-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .service-card:hover {
     transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .service-card img {
@@ -198,6 +209,87 @@ a {
     margin-bottom: 2rem;
     font-size: 2.5rem;
 }
+
+.services-content {
+    padding: var(--spacing);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.price-category {
+    margin-bottom: 3rem;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+
+.category-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem;
+}
+
+.category-header h2 {
+    color: white;
+    margin: 0;
+}
+
+.price-list {
+    padding: 2rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    flex: 1;
+}
+
+.service-name h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.service-name p {
+    margin: 0.5rem 0 0;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+.service-price {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    white-space: nowrap;
+}
+
+.price-note {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.service-cta {
+    text-align: center;
+    padding: 3rem var(--spacing);
+    background-color: var(--light-gray);
+}
+
+
+
 
 .projects-grid {
     display: grid;
@@ -261,6 +353,65 @@ a {
     display: block;
     margin-top: 1rem;
     color: var(--dark-gray);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.carousel-container img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: #333;
 }
 
 /* CTA sekce */

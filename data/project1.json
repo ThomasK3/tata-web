@@ -1,7 +1,19 @@
 {
     "title": "Rekonstrukce bytu Praha",
-    "beforeImage": "../img/projects/before1.jpg",
-    "afterImage": "../img/projects/after1.jpg",
+    "images": [
+        {
+            "src": "../img/projects/Frame 72.png",
+            "alt": "Pohled na obývací pokoj"
+        },
+        {
+            "src": "../img/projects/Frame 73.png",
+            "alt": "Kuchyňský kout"
+        },
+        {
+            "src": "../img/projects/image3.jpg",
+            "alt": "Koupelna"
+        }
+    ],
     "scope": [
         "Kompletní rekonstrukce bytového jádra",
         "Nové rozvody elektřiny",
