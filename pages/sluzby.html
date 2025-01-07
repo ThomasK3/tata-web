@@ -1,1 +1,242 @@
-<!DOCTYPE html><head></head><body><h1>SLUZBY</h1></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kompletní přehled stavebních služeb a orientační ceník - Tomáš Kaňuch stavební práce">
+    <title>Služby a ceník - Tomáš Kaňuch</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../brickwall.png">
+    <style>
+        .services-content {
+            padding: var(--spacing);
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .price-category {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .category-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem 2rem;
+        }
+
+        .category-header h2 {
+            color: white;
+            margin: 0;
+        }
+
+        .price-list {
+            padding: 2rem;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .service-name {
+            flex: 1;
+        }
+
+        .service-name h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .service-name p {
+            margin: 0.5rem 0 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+
+        .service-price {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            padding-left: 2rem;
+            white-space: nowrap;
+        }
+
+        .price-note {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .service-cta {
+            text-align: center;
+            padding: 3rem var(--spacing);
+            background-color: var(--light-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="../index.html">Tomáš Kaňuch - Stavební práce</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="sluzby.html">Služby</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a href="o-mne.html">O mně</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h1>Služby a ceník</h1>
+                <p>Kompletní přehled nabízených služeb s orientačními cenami. Konečná cena se může lišit podle rozsahu a náročnosti práce.</p>
+            </div>
+        </section>
+
+        <div class="services-content">
+            <div class="price-category">
+                <div class="category-header">
+                    <h2>Rekonstrukce</h2>
+                </div>
+                <div class="price-list">
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Kompletní rekonstrukce bytu</h3>
+                            <p>Včetně bourání, nových rozvodů, omítek a finálních úprav</p>
+                        </div>
+                        <div class="service-price">od 5000 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Rekonstrukce koupelny</h3>
+                            <p>Bourání, rozvody, hydroizolace, obklady, dlažba</p>
+                        </div>
+                        <div class="service-price">od 8000 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Rekonstrukce bytového jádra</h3>
+                            <p>Kompletní výměna umakartového jádra za zděné</p>
+                        </div>
+                        <div class="service-price">od 120 000 Kč</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-category">
+                <div class="category-header">
+                    <h2>Zednické práce</h2>
+                </div>
+                <div class="price-list">
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Zdění příček</h3>
+                            <p>Ytong, Porotherm, včetně materiálu</p>
+                        </div>
+                        <div class="service-price">od 850 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Vnitřní omítky</h3>
+                            <p>Strojní, včetně materiálu</p>
+                        </div>
+                        <div class="service-price">od 450 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Venkovní fasáda</h3>
+                            <p>Včetně materiálu a lešení</p>
+                        </div>
+                        <div class="service-price">od 950 Kč/m²</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-category">
+                <div class="category-header">
+                    <h2>Obkladačské práce</h2>
+                </div>
+                <div class="price-list">
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Pokládka obkladů</h3>
+                            <p>Pouze práce, bez materiálu</p>
+                        </div>
+                        <div class="service-price">od 650 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Pokládka dlažby</h3>
+                            <p>Pouze práce, bez materiálu</p>
+                        </div>
+                        <div class="service-price">od 550 Kč/m²</div>
+                    </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Pokládka velkoformátové dlažby</h3>
+                            <p>Formáty větší než 60x60 cm</p>
+                        </div>
+                        <div class="service-price">od 750 Kč/m²</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-note">
+                * Uvedené ceny jsou orientační a mohou se lišit podle konkrétních požadavků, náročnosti práce a aktuálních cen materiálů. Pro přesnou kalkulaci mě prosím kontaktujte.
+            </div>
+        </div>
+
+        <section class="service-cta">
+            <h2>Potřebujete spočítat přesnou cenu?</h2>
+            <p>Kontaktujte mě pro nezávaznou konzultaci a přesnou kalkulaci vašeho projektu.</p>
+            <a href="kontakt.html" class="cta-button">Nezávazná konzultace zdarma</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Kontakt</h3>
+                <p>Tomáš Kaňuch</p>
+                <p>Tel: +420 702 028 609</p>
+                <p>Email: info@kanuch-stavby.cz</p>
+                <p>IČO: 142 01 445</p>
+            </div>
+            <div class="footer-links">
+                <h3>Rychlé odkazy</h3>
+                <ul>
+                    <li><a href="sluzby.html">Služby</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="o-mne.html">O mně</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Provozní doba</h3>
+                <p>Po-Pá: 7:00 - 17:00</p>
+                <p>So-Ne: dle dohody</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tomáš Kaňuch - Stavební práce. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+</body>
+</html>

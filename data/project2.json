@@ -1,0 +1,18 @@
+{
+    "title": "NOVOSTAVBA",
+    "beforeImage": "../img/projects/before1.jpg",
+    "afterImage": "../img/projects/after1.jpg",
+    "scope": [
+        "Kompletní rekonstrukce bytového jádra",
+        "Nové rozvody elektřiny",
+        "Výměna oken",
+        "Nové podlahy",
+        "Rekonstrukce koupelny a WC",
+        "Nová kuchyňská linka na míru"
+    ],
+    "duration": "8 týdnů",
+    "testimonial": {
+        "text": "Perfektně odvedená práce, dodržení termínů a profesionální přístup. Děkujeme za krásný nový domov!",
+        "author": "Novákovi, Praha 6"
+    }
+}
