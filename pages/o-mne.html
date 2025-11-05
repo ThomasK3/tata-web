@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Poznejte blíže Tomáše Kaňucha - profesionála ve stavebnictví s dlouholetou praxí a zkušenostmi">
-    <title>O mně - Tomáš Kaňuch</title>
+    <title>O mně | Tomáš Kaňuch - Stavební práce</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
     <link rel="icon" href="../brickwall.png">
-
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="main-nav">
             <div class="logo">
-                <a href="../index.html">Tomáš Kaňuch - Stavební práce</a>
+                <a href="../index.html">Tomáš Kaňuch</a>
             </div>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="sluzby.html">Služby</a></li>
                 <li><a href="reference.html">Reference</a></li>
                 <li><a href="o-mne.html">O mně</a></li>
@@ -36,65 +48,62 @@
         <div class="about-content">
             <div class="about-intro">
                 <div class="profile-image">
-                    <img src="../img/gallery/Frame 71.png" alt="Tomáš Kaňuch">
+                    <img src="../img/gallery/Frame 71.png" alt="Tomáš Kaňuch - Stavební práce">
                 </div>
                 <div class="about-text">
                     <h2>Vítejte na mé stránce</h2>
-                    <p>Jmenuji se Tomáš Kaňuch a již více než 15 let se věnuji stavebním pracím a rekonstrukcím. Za tu dobu jsem získal bohaté zkušenosti s různými typy projektů, od drobných oprav až po kompletní rekonstrukce bytů a domů.</p>
-                    <p>Začínal jsem jako pomocný dělník a postupně jsem se vypracoval až k vlastnímu podnikání. Díky této cestě znám stavební práce od základů a rozumím všem aspektům realizace.</p>
-                    <p>Mým cílem je poskytovat kvalitní řemeslnou práci s důrazem na detail a spokojenost zákazníka. Věřím v poctivý přístup, otevřenou komunikaci a dodržování dohodnutých termínů.</p>
+                    <p>Jmenuji se Tomáš Kaňuch a již více než 15 let se věnuji stavebním pracím a rekonstrukcím. Za tu dobu jsem získal bohaté zkušenosti s různými typy projektů, od drobných oprav až po kompletní rekonstrukce bytů a rodinných domů.</p>
+                    <p>Začínal jsem jako pomocný dělník a postupně jsem se vypracoval až k vlastnímu podnikání. Díky této cestě znám stavební práce od základů a rozumím všem aspektům realizace - od přípravy projektu přes samotnou realizaci až po finální úpravy.</p>
+                    <p>Mým cílem je poskytovat kvalitní řemeslnou práci s důrazem na detail a spokojenost zákazníka. Věřím v poctivý přístup, otevřenou komunikaci a dodržování dohodnutých termínů a rozpočtů. Každý projekt beru jako novou výzvu a snažím se dosáhnout nejlepšího možného výsledku.</p>
                 </div>
             </div>
         </div>
 
         <section class="values-section">
+            <h2>Moje hodnoty</h2>
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../img/icons/rating.png" alt="Kvalita">
-                    </div>
+                    <div class="value-icon">⭐</div>
                     <h3>Kvalita na prvním místě</h3>
-                    <p>Používám pouze kvalitní materiály a dodržuji správné technologické postupy.</p>
+                    <p>Používám pouze kvalitní materiály a dodržuji správné technologické postupy pro dlouhou životnost vašich investic.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../img/icons/dependable.png" alt="Spolehlivost">
-                    </div>
+                    <div class="value-icon">🤝</div>
                     <h3>Spolehlivost</h3>
-                    <p>Dodržuji dohodnuté termíny a rozpočty. Na mé slovo se můžete spolehnout.</p>
+                    <p>Dodržuji dohodnuté termíny a rozpočty. Na mé slovo se můžete spolehnout, vaše spokojenost je mou prioritou.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">
-                        <img src="../img/icons/badge.png" alt="Zkušenosti">
-                    </div>
+                    <div class="value-icon">🏆</div>
                     <h3>Letité zkušenosti</h3>
-                    <p>15+ let praxe v oboru a stovky úspěšně dokončených projektů.</p>
+                    <p>15+ let praxe v oboru a stovky úspěšně dokončených projektů. Každý projekt obohacuje mé znalosti.</p>
                 </div>
             </div>
         </section>
 
-        <section class="certifications about-content">
-            <h2>Certifikace a oprávnění</h2>
-            <div class="cert-grid">
-                <div class="cert-item">
-                    <h3>Živnostenské oprávnění</h3>
-                    <p>Zednictví a pokládka obkladů</p>
-                    <p>IČO: 142 01 445</p>
-                </div>
-                <div class="cert-item">
-                    <h3>Certifikát BOZP</h3>
-                    <p>Školení bezpečnosti práce a ochrany zdraví</p>
-                </div>
-                <div class="cert-item">
-                    <h3>Certifikovaný technik</h3>
-                    <p>Specializace na moderní stavební materiály a technologie</p>
+        <div class="about-content">
+            <div style="background: var(--gray-50); padding: var(--spacing-2xl); border-radius: var(--radius-xl); margin-bottom: var(--spacing-xl);">
+                <h2>Certifikace a oprávnění</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg); margin-top: var(--spacing-lg);">
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h3>Živnostenské oprávnění</h3>
+                        <p>Zednictví a pokládka obkladů</p>
+                        <p style="margin: 0; color: var(--primary-orange); font-weight: 600;">IČO: 142 01 445</p>
+                    </div>
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h3>Certifikát BOZP</h3>
+                        <p style="margin: 0;">Školení bezpečnosti práce a ochrany zdraví při práci</p>
+                    </div>
+                    <div style="background: white; padding: var(--spacing-lg); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <h3>Odborná způsobilost</h3>
+                        <p style="margin: 0;">Specializace na moderní stavební materiály a technologie</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="service-cta">
             <h2>Zaujala vás má práce?</h2>
-            <p>Kontaktujte mě pro nezávaznou konzultaci vašeho projektu.</p>
+            <p>Kontaktujte mě pro nezávaznou konzultaci vašeho projektu. Společně naplánujeme realizaci od začátku do konce.</p>
             <a href="kontakt.html" class="cta-button">Kontaktovat</a>
         </section>
     </main>
@@ -103,9 +112,9 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Kontakt</h3>
-                <p>Tomáš Kaňuch</p>
-                <p>Tel: +420 702 028 609</p>
-                <p>Email: info@kanuch-stavby.cz</p>
+                <p><strong>Tomáš Kaňuch</strong></p>
+                <p>Tel: <a href="tel:+420702028609" style="color: var(--gray-400);">+420 702 028 609</a></p>
+                <p>Email: <a href="mailto:info@kanuch-stavby.cz" style="color: var(--gray-400);">info@kanuch-stavby.cz</a></p>
                 <p>IČO: 142 01 445</p>
             </div>
             <div class="footer-links">
@@ -119,13 +128,15 @@
             </div>
             <div class="footer-hours">
                 <h3>Provozní doba</h3>
-                <p>Po-Pá: 7:00 - 17:00</p>
-                <p>So-Ne: dle dohody</p>
+                <p>Pondělí - Pátek: 7:00 - 17:00</p>
+                <p>Sobota - Neděle: dle dohody</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Tomáš Kaňuch - Stavební práce. Všechna práva vyhrazena.</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
