@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kompletní přehled stavebních služeb a orientační ceník - Tomáš Kaňuch stavební práce">
-    <title>Služby a ceník - Tomáš Kaňuch</title>
+    <title>Služby a ceník | Tomáš Kaňuch - Stavební práce</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
     <link rel="icon" href="../brickwall.png">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="main-nav">
             <div class="logo">
-                <a href="../index.html">Tomáš Kaňuch - Stavební práce</a>
+                <a href="../index.html">Tomáš Kaňuch</a>
             </div>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="sluzby.html">Služby</a></li>
                 <li><a href="reference.html">Reference</a></li>
                 <li><a href="o-mne.html">O mně</a></li>
@@ -90,6 +103,13 @@
                         </div>
                         <div class="service-price">od 950 Kč/m²</div>
                     </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Zateplení fasády</h3>
+                            <p>Kompletní zateplení včetně finální úpravy</p>
+                        </div>
+                        <div class="service-price">od 1200 Kč/m²</div>
+                    </div>
                 </div>
             </div>
 
@@ -120,17 +140,24 @@
                         </div>
                         <div class="service-price">od 750 Kč/m²</div>
                     </div>
+                    <div class="price-item">
+                        <div class="service-name">
+                            <h3>Mozaika a dekorativní obklady</h3>
+                            <p>Práce vyžadující vysokou preciznost</p>
+                        </div>
+                        <div class="service-price">od 900 Kč/m²</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="price-note">
+            <p class="price-note">
                 * Uvedené ceny jsou orientační a mohou se lišit podle konkrétních požadavků, náročnosti práce a aktuálních cen materiálů. Pro přesnou kalkulaci mě prosím kontaktujte.
-            </div>
+            </p>
         </div>
 
         <section class="service-cta">
             <h2>Potřebujete spočítat přesnou cenu?</h2>
-            <p>Kontaktujte mě pro nezávaznou konzultaci a přesnou kalkulaci vašeho projektu.</p>
+            <p>Kontaktujte mě pro nezávaznou konzultaci a přesnou kalkulaci vašeho projektu. Rád vám pomohu naplánovat váš projekt.</p>
             <a href="kontakt.html" class="cta-button">Nezávazná konzultace zdarma</a>
         </section>
     </main>
@@ -139,9 +166,9 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Kontakt</h3>
-                <p>Tomáš Kaňuch</p>
-                <p>Tel: +420 702 028 609</p>
-                <p>Email: info@kanuch-stavby.cz</p>
+                <p><strong>Tomáš Kaňuch</strong></p>
+                <p>Tel: <a href="tel:+420702028609" style="color: var(--gray-400);">+420 702 028 609</a></p>
+                <p>Email: <a href="mailto:info@kanuch-stavby.cz" style="color: var(--gray-400);">info@kanuch-stavby.cz</a></p>
                 <p>IČO: 142 01 445</p>
             </div>
             <div class="footer-links">
@@ -155,13 +182,15 @@
             </div>
             <div class="footer-hours">
                 <h3>Provozní doba</h3>
-                <p>Po-Pá: 7:00 - 17:00</p>
-                <p>So-Ne: dle dohody</p>
+                <p>Pondělí - Pátek: 7:00 - 17:00</p>
+                <p>Sobota - Neděle: dle dohody</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Tomáš Kaňuch - Stavební práce. Všechna práva vyhrazena.</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

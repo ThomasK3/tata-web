@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Prohlédněte si naše realizované projekty a reference od spokojených zákazníků. Kvalitní stavební práce a rekonstrukce.">
-    <title>Reference a realizované projekty | Tomáš Kaňuch</title>
+    <title>Reference a projekty | Tomáš Kaňuch - Stavební práce</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reference.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="icon" href="../brickwall.png">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="main-nav">
             <div class="logo">
-                <a href="../index.html">Tomáš Kaňuch - Stavební práce</a>
+                <a href="../index.html">Tomáš Kaňuch</a>
             </div>
-            <ul class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="sluzby.html">Služby</a></li>
                 <li><a href="reference.html">Reference</a></li>
                 <li><a href="o-mne.html">O mně</a></li>
@@ -25,7 +38,6 @@
     </header>
 
     <main>
-        <!-- Úvodní sekce -->
         <section class="page-hero">
             <div class="hero-content">
                 <h1>Realizované projekty</h1>
@@ -33,7 +45,6 @@
             </div>
         </section>
 
-        <!-- Hlavní sekce s galerií -->
         <section class="projects-gallery">
             <div class="container">
                 <!-- Filtry -->
@@ -54,7 +65,6 @@
                             <div class="gallery-overlay">
                                 <h3>Rekonstrukce bytu Praha</h3>
                                 <p class="project-brief">Kompletní rekonstrukce 3+kk včetně koupelny a kuchyně</p>
-                                <button class="view-details" data-project="1">Zobrazit detail</button>
                             </div>
                         </div>
                     </article>
@@ -66,7 +76,6 @@
                             <div class="gallery-overlay">
                                 <h3>Novostavba RD Beroun</h3>
                                 <p class="project-brief">Realizace hrubé stavby rodinného domu</p>
-                                <button class="view-details" data-project="2">Zobrazit detail</button>
                             </div>
                         </div>
                     </article>
@@ -77,52 +86,47 @@
                             <img src="../img/projects/Frame 70.png" alt="Moderní koupelna" loading="lazy">
                             <div class="gallery-overlay">
                                 <h3>Moderní koupelna Praha</h3>
-                                <p class="project-brief">Kompletní rekonstrukce koupelny</p>
-                                <button class="view-details" data-project="3">Zobrazit detail</button>
+                                <p class="project-brief">Kompletní rekonstrukce koupelny s designovými obklady</p>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Další projekty... -->
+                    <!-- Projekt 4 -->
+                    <article class="gallery-item" data-category="rekonstrukce">
+                        <div class="gallery-image">
+                            <img src="../img/gallery/image 11.png" alt="Rekonstrukce domu" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Rekonstrukce rodinného domu</h3>
+                                <p class="project-brief">Částečná rekonstrukce interiéru a fasády</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 5 -->
+                    <article class="gallery-item" data-category="zatepleni">
+                        <div class="gallery-image">
+                            <img src="../img/gallery/image 12.png" alt="Zateplení fasády" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Zateplení a nová fasáda</h3>
+                                <p class="project-brief">Kompletní zateplení bytového domu</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 6 -->
+                    <article class="gallery-item" data-category="koupelny">
+                        <div class="gallery-image">
+                            <img src="../img/gallery/image 13.png" alt="Koupelna s vanou" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Luxusní koupelna</h3>
+                                <p class="project-brief">Moderní koupelna s vanou a sprchovým koutem</p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Modální okno pro detail projektu -->
-        <div class="project-modal" id="projectModal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2></h2>
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="modal-gallery">
-                    <div class="carousel">
-                        <button class="carousel-btn prev">&lt;</button>
-                        <div class="carousel-container">
-                            <!-- Obrázky budou dynamicky přidány pomocí JS -->
-                        </div>
-                        <button class="carousel-btn next">&gt;</button>
-                        <div class="carousel-dots">
-                            <!-- Tečky pro navigaci budou dynamicky přidány -->
-                        </div>
-                    </div>
-                </div>
-                <div class="project-details">
-                    <div class="detail-item">
-                        <h4>Rozsah prací</h4>
-                        <ul></ul>
-                    </div>
-                    <div class="detail-item">
-                        <h4>Doba realizace</h4>
-                        <p></p>
-                    </div>
-                    <div class="client-testimonial">
-                        <blockquote></blockquote>
-                        <cite></cite>
-                    </div>
-                </div>
-            </div>
-        </div>
         <section class="testimonials-section">
             <div class="container">
                 <h2>Co o nás říkají zákazníci</h2>
@@ -140,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Referenční karta 2 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
@@ -154,7 +158,7 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Referenční karta 3 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
@@ -177,10 +181,10 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Kontakt</h3>
-                <p>Tomáš Kaňuch</p>
-                <p>Tel: +420 777 888 999</p>
-                <p>Email: info@kanuch-stavby.cz</p>
-                <p>IČO: 12345678</p>
+                <p><strong>Tomáš Kaňuch</strong></p>
+                <p>Tel: <a href="tel:+420702028609" style="color: var(--gray-400);">+420 702 028 609</a></p>
+                <p>Email: <a href="mailto:info@kanuch-stavby.cz" style="color: var(--gray-400);">info@kanuch-stavby.cz</a></p>
+                <p>IČO: 142 01 445</p>
             </div>
             <div class="footer-links">
                 <h3>Rychlé odkazy</h3>
@@ -193,8 +197,8 @@
             </div>
             <div class="footer-hours">
                 <h3>Provozní doba</h3>
-                <p>Po-Pá: 7:00 - 17:00</p>
-                <p>So-Ne: dle dohody</p>
+                <p>Pondělí - Pátek: 7:00 - 17:00</p>
+                <p>Sobota - Neděle: dle dohody</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -202,6 +206,7 @@
         </div>
     </footer>
 
+    <script src="../js/main.js"></script>
     <script src="../js/reference.js"></script>
 </body>
 </html>
